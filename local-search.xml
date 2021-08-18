@@ -4,6 +4,37 @@
   
   
   <entry>
+    <title>爬取网站视频命令行工具you-get安装及使用方法</title>
+    <link href="/100/"/>
+    <url>/100/</url>
+    
+    <content type="html"><![CDATA[<h1 id="软件简介"><a href="#软件简介" class="headerlink" title="软件简介"></a>软件简介</h1><p>you-get 是一个跨平台命令行视频、音频与图像下载工具，支持国内外常用的各种多媒体网站。</p><h1 id="下载方法"><a href="#下载方法" class="headerlink" title="下载方法"></a>下载方法</h1><h2 id="Step-01"><a href="#Step-01" class="headerlink" title="Step.01"></a>Step.01</h2><p><strong>下载Python</strong>，可以在python官网下载最新的python版本。<br>对于已经下载了Python的用户：由于you-get是Python的一个第三方库，所以可以使用pip工具进行下载。</p><h2 id="Step-02"><a href="#Step-02" class="headerlink" title="Step.02"></a>Step.02</h2><p>在命令行cmd下输入代码：<code>pip3 install you-get</code><br><img src="https://img-blog.csdnimg.cn/20210417131030530.png"></p><p>命令行输入you-get 如果有以下回显说明安装成功<br><img src="https://img-blog.csdnimg.cn/2021041713181113.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTUzMjg3MA==,size_16,color_FFFFFF,t_70"></p><h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p>掌握you-get在命令行下的一些简单命令就可以轻松下载资源啦，下面列出常用命令以及使用方法。</p><p><code>you-get URL</code></p><ul><li>注:这里URL即网址。其格式不是字符串，使用时直接从浏览器粘贴即可</li><li><strong>功能：直接把目标网址的内容下载到C:\User\用户名目录下(后面的命令会提供自定义下载路径的方法)</strong><br><img src="https://img-blog.csdnimg.cn/20210417133633191.png"></li></ul><p><code>you-get -i URL 或 you-get --info URL</code></p><ul><li>功能:展示待下载的文件信息   </li><li>下图展示该命令的使用<br><img src="https://img-blog.csdnimg.cn/20210417133517164.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTUzMjg3MA==,size_16,color_FFFFFF,t_70"></li></ul><p><code>you-get -o 你想要保存的路径 URL</code></p><ul><li>注:路径的格式也不是字符串，使用时直接复制即可</li></ul><h1 id="报错提示"><a href="#报错提示" class="headerlink" title="报错提示"></a>报错提示</h1><p>有时候无法你会发现无法使用you-get，可能是版本过于老旧，这时候需要在命令行下输入更新命令：<code>pip3 install --upgrade you-get</code></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>you-get</tag>
+      
+      <tag>工具</tag>
+      
+      <tag>视频</tag>
+      
+      <tag>教程</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/10/"/>
     <url>/10/</url>
