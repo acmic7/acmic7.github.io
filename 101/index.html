@@ -18,9 +18,25 @@
   <meta name="author" content="mic">
   <meta name="keywords" content="">
   
-  <title>分类 - Acmic</title>
+  <title>Hexo自定义不受主题渲染的独立页面 - Acmic</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -48,7 +64,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -166,14 +182,51 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('https://cdn.jsdelivr.net/gh/acmic7/CDN/img/category-page.jpg') no-repeat center center;
+         style="background: url('https://cdn.jsdelivr.net/gh/acmic7/CDN/img/post-page.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="分类">
+            <span class="h2" id="subtitle" title="Hexo自定义不受主题渲染的独立页面">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-08-19 13:00" pubdate>
+        2021年8月19日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      221 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      2
+       分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -186,105 +239,123 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-
-
-
-
-
-
-<div class="category-list">
-  
-  
-  
-  
-    
-    
-    <div class="category row">
-      <a
-        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-c00d1eb68b529768ba98c975c76a9b66" role="tab" data-toggle="collapse" href="#collapse-c00d1eb68b529768ba98c975c76a9b66"
-        aria-expanded="false"
-      >
-        Hexo
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/Hexo/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-        
-          
-  <div id="collapse-c00d1eb68b529768ba98c975c76a9b66" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-c00d1eb68b529768ba98c975c76a9b66">
-    
-    
       
-      
-        <a href="/101/" class="list-group-item list-group-item-action">
-          <span class="category-post">Hexo自定义不受主题渲染的独立页面</span>
-        </a>
-      
-    
-  </div>
 
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a
-        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-b7824d5cd41d06de995a661879fefd3d" role="tab" data-toggle="collapse" href="#collapse-b7824d5cd41d06de995a661879fefd3d"
-        aria-expanded="false"
-      >
-        教程
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-        
-          
-  <div id="collapse-b7824d5cd41d06de995a661879fefd3d" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-b7824d5cd41d06de995a661879fefd3d">
-    
-    
-      
-      
-        <a href="/100/" class="list-group-item list-group-item-action">
-          <span class="category-post">爬取网站视频命令行工具you-get安装及使用方法</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-</div>
-
-              </div>
-            </div>
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Hexo自定义不受主题渲染的独立页面</h1>
+            
+            <div class="markdown-body">
+              <h1 id="Hexo：将文章或页面设置为不受主题渲染"><a href="#Hexo：将文章或页面设置为不受主题渲染" class="headerlink" title="Hexo：将文章或页面设置为不受主题渲染"></a>Hexo：将文章或页面设置为不受主题渲染</h1><div class="note note-success">
+            <p>Hexo的配置文件中提供了配置项<code>skip_render</code> ，是用来对不需要的目录或者文件进行渲染排除。</p>
           </div>
+
+<h2 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h2><h3 id="1、打开根目录下的配置文件：-config-yml"><a href="#1、打开根目录下的配置文件：-config-yml" class="headerlink" title="1、打开根目录下的配置文件：_config.yml"></a>1、打开根目录下的配置文件：_config.yml</h3><h3 id="2、找到-skip-render配置"><a href="#2、找到-skip-render配置" class="headerlink" title="2、找到 skip_render配置"></a>2、找到 <code>skip_render</code>配置</h3><h3 id="3、根据需求设置不渲染"><a href="#3、根据需求设置不渲染" class="headerlink" title="3、根据需求设置不渲染"></a>3、根据需求设置不渲染</h3><ul>
+<li>设置单篇文章不受渲染：<br><code>skip_render: &quot;_post/test-post.md&quot;</code></li>
+<li>设置多篇文章不受渲染：<figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs haml">skip_render:<br>  -<span class="ruby"> <span class="hljs-string">&quot;_post/test-post1.md&quot;</span></span><br><span class="ruby"></span>  -<span class="ruby"> <span class="hljs-string">&quot;_post/test-post2.md&quot;</span></span><br></code></pre></td></tr></table></figure></li>
+<li>设置某一页面不受渲染：<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">skip_render:</span> <span class="hljs-string">&quot;Other/**&quot;</span><br></code></pre></td></tr></table></figure></li>
+<li>html也是一样，在不想被渲染的 html 文件最上面添加如下代码:<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">layout:</span> <span class="hljs-literal">false</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure></li>
+<li>也可正则表达式匹配<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vbnet"><span class="hljs-symbol">skip_render:</span> <span class="hljs-comment">&#x27;*.html&#x27;</span><br></code></pre></td></tr></table></figure>
+<div class="note note-warning">
+            <p>注意:<code>skip_render</code>匹配的文件夹为<code>source</code>，这样会排除所有<code>source</code>文件夹下以<code>html结尾</code>的文件，但是不会匹配到子目录。</p>
+          </div></li>
+<li>排除目录<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vbnet"><span class="hljs-symbol">skip_render:</span> <span class="hljs-comment">&#x27;demo/*&#x27;</span><br></code></pre></td></tr></table></figure></li>
+</ul>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Hexo/">Hexo</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%87%AA%E5%AE%9A%E4%B9%89%E4%B8%BB%E9%A2%98/">自定义主题</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/100/">
+                        <span class="hidden-mobile">爬取网站视频命令行工具you-get安装及使用方法</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="lv-container" data-id="city" data-uid="MTAyMC81Mzc5MC8zMDI2Mw==">
+    <script type="text/javascript">
+      Fluid.utils.loadComments('#lv-container', function() {
+        Fluid.utils.createScript('https://cdn-city.livere.com/js/embed.dist.js');
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the comments</noscript>
+  </div>
+
+
+              </article>
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -388,9 +459,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
 
 
 

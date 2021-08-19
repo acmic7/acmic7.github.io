@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>Hexo自定义不受主题渲染的独立页面</title>
+    <link href="/101/"/>
+    <url>/101/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo：将文章或页面设置为不受主题渲染"><a href="#Hexo：将文章或页面设置为不受主题渲染" class="headerlink" title="Hexo：将文章或页面设置为不受主题渲染"></a>Hexo：将文章或页面设置为不受主题渲染</h1><div class="note note-success">            <p>Hexo的配置文件中提供了配置项<code>skip_render</code> ，是用来对不需要的目录或者文件进行渲染排除。</p>          </div><h2 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h2><h3 id="1、打开根目录下的配置文件：-config-yml"><a href="#1、打开根目录下的配置文件：-config-yml" class="headerlink" title="1、打开根目录下的配置文件：_config.yml"></a>1、打开根目录下的配置文件：_config.yml</h3><h3 id="2、找到-skip-render配置"><a href="#2、找到-skip-render配置" class="headerlink" title="2、找到 skip_render配置"></a>2、找到 <code>skip_render</code>配置</h3><h3 id="3、根据需求设置不渲染"><a href="#3、根据需求设置不渲染" class="headerlink" title="3、根据需求设置不渲染"></a>3、根据需求设置不渲染</h3><ul><li>设置单篇文章不受渲染：<br><code>skip_render: &quot;_post/test-post.md&quot;</code></li><li>设置多篇文章不受渲染：<figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs haml">skip_render:<br>  -<span class="ruby"> <span class="hljs-string">&quot;_post/test-post1.md&quot;</span></span><br><span class="ruby"></span>  -<span class="ruby"> <span class="hljs-string">&quot;_post/test-post2.md&quot;</span></span><br></code></pre></td></tr></table></figure></li><li>设置某一页面不受渲染：<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">skip_render:</span> <span class="hljs-string">&quot;Other/**&quot;</span><br></code></pre></td></tr></table></figure></li><li>html也是一样，在不想被渲染的 html 文件最上面添加如下代码:<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">layout:</span> <span class="hljs-literal">false</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure></li><li>也可正则表达式匹配<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vbnet"><span class="hljs-symbol">skip_render:</span> <span class="hljs-comment">&#x27;*.html&#x27;</span><br></code></pre></td></tr></table></figure><div class="note note-warning">            <p>注意:<code>skip_render</code>匹配的文件夹为<code>source</code>，这样会排除所有<code>source</code>文件夹下以<code>html结尾</code>的文件，但是不会匹配到子目录。</p>          </div></li><li>排除目录<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vbnet"><span class="hljs-symbol">skip_render:</span> <span class="hljs-comment">&#x27;demo/*&#x27;</span><br></code></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Hexo</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>教程</tag>
+      
+      <tag>自定义主题</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>爬取网站视频命令行工具you-get安装及使用方法</title>
     <link href="/100/"/>
     <url>/100/</url>
@@ -20,13 +47,13 @@
     
     <tags>
       
+      <tag>教程</tag>
+      
       <tag>you-get</tag>
       
       <tag>工具</tag>
       
       <tag>视频</tag>
-      
-      <tag>教程</tag>
       
     </tags>
     
