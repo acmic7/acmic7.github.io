@@ -14,9 +14,9 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="">
+  <meta name="description" content="Acmic致力于打造个人空间，是记录博主学习和成长的一个自媒体平台。">
   <meta name="author" content="mic">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="HTML,CSS,JavaScript,C/C++,Java,linux">
   
   <title>Hexo自定义不受主题渲染的独立页面 - Acmic</title>
 
@@ -60,7 +60,9 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
 
 
 <body>
@@ -157,6 +159,18 @@
           
           
             <li class="nav-item">
+              <a class="nav-link" href="/bookmark/">
+                <i class="iconfont icon-bookmark"></i>
+                收藏
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
                 关于
@@ -209,7 +223,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      221 字
+      209 字
     </span>
   
 
@@ -257,15 +271,15 @@
           </div>
 
 <h2 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h2><h3 id="1、打开根目录下的配置文件：-config-yml"><a href="#1、打开根目录下的配置文件：-config-yml" class="headerlink" title="1、打开根目录下的配置文件：_config.yml"></a>1、打开根目录下的配置文件：_config.yml</h3><h3 id="2、找到-skip-render配置"><a href="#2、找到-skip-render配置" class="headerlink" title="2、找到 skip_render配置"></a>2、找到 <code>skip_render</code>配置</h3><h3 id="3、根据需求设置不渲染"><a href="#3、根据需求设置不渲染" class="headerlink" title="3、根据需求设置不渲染"></a>3、根据需求设置不渲染</h3><ul>
-<li>设置单篇文章不受渲染：<br><code>skip_render: &quot;_post/test-post.md&quot;</code></li>
-<li>设置多篇文章不受渲染：<figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs haml">skip_render:<br>  -<span class="ruby"> <span class="hljs-string">&quot;_post/test-post1.md&quot;</span></span><br><span class="ruby"></span>  -<span class="ruby"> <span class="hljs-string">&quot;_post/test-post2.md&quot;</span></span><br></code></pre></td></tr></table></figure></li>
-<li>设置某一页面不受渲染：<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">skip_render:</span> <span class="hljs-string">&quot;Other/**&quot;</span><br></code></pre></td></tr></table></figure></li>
-<li>html也是一样，在不想被渲染的 html 文件最上面添加如下代码:<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">layout:</span> <span class="hljs-literal">false</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure></li>
-<li>也可正则表达式匹配<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vbnet"><span class="hljs-symbol">skip_render:</span> <span class="hljs-comment">&#x27;*.html&#x27;</span><br></code></pre></td></tr></table></figure>
+<li>设置单篇文章不受渲染：<br><code>skip_render: "_post/test-post.md"</code></li>
+<li>设置多篇文章不受渲染：<figure class="highlight haml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs haml">skip_render:<br>  -<span class="ruby"> <span class="hljs-string">"_post/test-post1.md"</span></span><br><span class="ruby"></span>  -<span class="ruby"> <span class="hljs-string">"_post/test-post2.md"</span></span><br></code></pre></td></tr></tbody></table></figure></li>
+<li>设置某一页面不受渲染：<figure class="highlight avrasm"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">skip_render:</span> <span class="hljs-string">"Other/**"</span><br></code></pre></td></tr></tbody></table></figure></li>
+<li>html也是一样，在不想被渲染的 html 文件最上面添加如下代码:<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">layout:</span> <span class="hljs-literal">false</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></tbody></table></figure></li>
+<li>也可正则表达式匹配<figure class="highlight vbnet"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vbnet"><span class="hljs-symbol">skip_render:</span> <span class="hljs-comment">'*.html'</span><br></code></pre></td></tr></tbody></table></figure>
 <div class="note note-warning">
             <p>注意:<code>skip_render</code>匹配的文件夹为<code>source</code>，这样会排除所有<code>source</code>文件夹下以<code>html结尾</code>的文件，但是不会匹配到子目录。</p>
           </div></li>
-<li>排除目录<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vbnet"><span class="hljs-symbol">skip_render:</span> <span class="hljs-comment">&#x27;demo/*&#x27;</span><br></code></pre></td></tr></table></figure></li>
+<li>排除目录<figure class="highlight vbnet"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vbnet"><span class="hljs-symbol">skip_render:</span> <span class="hljs-comment">'demo/*'</span><br></code></pre></td></tr></tbody></table></figure></li>
 </ul>
 
             </div>
@@ -517,5 +531,26 @@
 <script  src="/js/boot.js" ></script>
 
 
-</body>
+<!-- hexo injector body_end start -->
+  <script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js"></script>
+  <script data-pjax>
+        function GithubCalendarConfig(){
+            var git_githubapiurl ="https://python-github-calendar-api.vercel.app/api?acmic7";
+            var git_color =['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f'];
+            var git_user ="acmic7";
+            var parent_div_git = document.getElementById('recent-posts');
+            var git_div_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>';
+            if(parent_div_git && location.pathname =='/about/'){
+                console.log('已挂载github calendar')
+                // parent_div_git.innerHTML=git_div_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",git_div_html) // 有报错，但不影响使用(支持pjax跳转)
+            };
+            GithubCalendar(git_githubapiurl,git_color,git_user)
+        }
+        if(document.getElementById('recent-posts')){
+            GithubCalendarConfig()
+        }
+    </script>
+    <style>#github_container{min-height:280px}@media screen and (max-width:650px) {#github_container{background-image:;min-height:0px}}</style>
+    <style></style><!-- hexo injector body_end end --></body>
 </html>
