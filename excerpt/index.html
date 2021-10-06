@@ -51,6 +51,11 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="/css/shuoshuo.css">
+<link rel="stylesheet" href="/css/duihua.css">
+
+
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
@@ -302,14 +307,48 @@
 <article class="page-content">
   <div class="markdown-body">
 
-
 <div class="note note-warning">
             <p>暂无</p>
           </div>
 
-
-
 </div>
+
+
+
+<link rel="stylesheet" href="./css/shuoshuo.css">
+
+<div id="primary" class="content-area" style="">
+    <main id="main" class="site-main" role="main">
+        <div id="shuoshuo_content">
+            <ul class="cbp_tmtimeline">
+                <li> <span class="shuoshuo_author_img"><img src="https://cdn.jsdelivr.net/gh/acmic7/CDN/img/avatar.png" srcset="https://cdn.jsdelivr.net/gh/acmic7/CDN/img/loading.gif" lazyload class="avatar avatar-48 zhuan" width="48" height="48"></span>
+                    <a class="cbp_tmlabel" href="">
+                        <p></p>
+                        <p>第一个说说</p>
+                        <p></p>
+                        <p class="shuoshuo_time"><i class="fa fa-clock-o"></i>
+                            2020年10月1日
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+</main></div>
+<script type="text/javascript">
+    (function () {
+        var oldClass = "";
+        var Obj = "";
+        $(".cbp_tmtimeline li").hover(function () {
+            Obj = $(this).children(".shuoshuo_author_img");
+            Obj = Obj.children("img");
+            oldClass = Obj.attr("class");
+            var newClass = oldClass + " zhuan";
+            Obj.attr("class", newClass);
+        }, function () {
+            Obj.attr("class", oldClass);
+        })
+    })
+</script>
 
   
 </article>
