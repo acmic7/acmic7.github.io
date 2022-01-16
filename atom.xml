@@ -6,7 +6,7 @@
   <link href="https://acmic.top/atom.xml" rel="self"/>
   
   <link href="https://acmic.top/"/>
-  <updated>2022-01-14T16:02:43.213Z</updated>
+  <updated>2022-01-16T15:57:45.021Z</updated>
   <id>https://acmic.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL5.7 支持的存储引擎</title>
+    <link href="https://acmic.top/106/"/>
+    <id>https://acmic.top/106/</id>
+    <published>2022-01-14T16:00:00.000Z</published>
+    <updated>2022-01-16T15:57:45.021Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;下文介绍有关MySQL存储引擎的相关内容，主要对官网的内容进行了翻译。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;InnoDB：MySQL 5.7 中的默认存储引擎。是用于 MySQL 的事务安全（符合</summary>
+        
+      
+    
+    
+    
+    <category term="MySQL" scheme="https://acmic.top/categories/MySQL/"/>
+    
+    
+    <category term="数据库" scheme="https://acmic.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    <category term="存储引擎" scheme="https://acmic.top/tags/%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/"/>
+    
+  </entry>
   
   <entry>
     <title>学习笔记</title>
@@ -174,7 +203,7 @@
     <link href="https://acmic.top/100/"/>
     <id>https://acmic.top/100/</id>
     <published>2021-08-18T10:33:05.000Z</published>
-    <updated>2022-01-15T09:21:37.830Z</updated>
+    <updated>2022-01-16T16:01:21.658Z</updated>
     
     
       
