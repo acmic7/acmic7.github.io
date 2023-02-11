@@ -4,11 +4,61 @@
   
     
     <entry>
-      <title>Defensive CSS</title>
+      <title>真实方位是如何暴露的</title>
+      <link href="/110/"/>
+      <url>/110/</url>
+      
+        <content type="html"><![CDATA[<p>很多时候，开发者需要知道用户的地理方位。</p><p>最简单的方法，就是查看用户的 IP 地址，它能够确定地理方位。</p><p>如果你不想暴露真实方位，需要使用技术手段，伪装自己的 IP 地址。</p><p>但是，这个事情不是那么简单，真实方位其实很难隐藏。</p><p>上周，Hacker News 论坛上，有人发帖，说他想不通，谷歌怎么知道他的位置。</p><p>他从美国去墨西哥出差，为了使用美国的银行服务，全程都用了 VPN，伪装后的 IP 地址是在美国。按理说，服务器根据他的 IP 地址，只会认为他在美国华盛顿州。</p><p>但是，等他回到美国，打开家里的电脑。（注意，是家里的电脑，从来没有离开过美国。）浏览器显示，他的位置在墨西哥，推送给他的广告都是西班牙语。</p><p>他困惑不解，谷歌怎么会知道，我的真实方位是在墨西哥呢？我没有暴露真实 IP 地址啊。</p><p>帖子的下面就有人指点他了：谷歌判断你的地理方位，不仅仅看 IP 地址，更重要的看你的路由器的 MAC 地址。</p><p>一般来说，路由器很少改变地理方位，买来后放在某个地方，它就会一直放在那里。很少有人带着路由器一起出门。</p><p>这意味着，只要知道你使用哪个路由器，根据路由器的方位，就可以推断出你的真实方位。</p><p>每个路由器的 MAC 地址都是独一无二，而且固定不变。因此，对于互联网公司来说，只要建一个数据库，收集路由器的 MAC 地址和所在地方位，就能知道用户的真实方位了。</p><p>谷歌、苹果和很多互联网公司都是这样干的。安卓系统和 Chrome 浏览器都有这种机制，获取用户正在使用的路由器 MAC 地址，然后调用用户机器的 GPS 判断方位，再把这些数据发给服务器。如果本机没有 GPS 功能，就根据 IP 地址推断方位。</p><p>因为将你的 IP 地址与路由器 MAC 地址相匹配，不是实时的，会有一个时间差，所以有时候你出门旅行，方位变了，但是谷歌还会显示以前的方位，要过一段时间以后才会纠正。</p><p>如果你真的想避免暴露自己的方位，需要使用剥离了谷歌服务的安卓系统（比如 GrapheneOS），或者剥离了谷歌服务的 Chrome 浏览器（即 Chromium）。</p><p>问题是很多 App 都偷偷收集这些数据，谷歌、苹果这样的大公司，至少是明着干，可能还有办法关掉。小公司是偷偷做，根本不告诉用户，完全防不胜防。</p><p>所以，在互联网上，想要隐藏自己的方位，其实非常难。如果电信服务商、操作系统、应用软件都设置了追踪机制，它们联合起来，我觉得几乎没有可能隐藏自己。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2分钟规则</title>
+      <link href="/109/"/>
+      <url>/109/</url>
+      
+        <content type="html"><![CDATA[<p>每当你发现很难开始执行某项任务时，可以试试将其缩减成2分钟的版本。</p><p>看一本书 → 看一页书<br>写一篇文章 → 写一句话<br>跑10公里 → 穿上跑鞋<br>做100次俯卧撑 → 做1次俯卧撑<br>多吃蔬菜水果 → 吃一个水果<br>编写一个程序 → 编写一个函数 → 编写一行代码<br>这样做的目的是使上手变得超级容易，让你先上手再说。一旦开始做了（这可能是最艰难的一步），你就会开始有动力，可能会继续做下去。</p><p>阅读一页 → 阅读10页 → 读完第一章<br>写一个句子 → 写文章的开头 → 写出正文<br>穿上跑鞋 → 步行5分钟 → 跑步5分钟<br>一旦开始，继续做下去就会容易得多。有时，你甚至会发现，自己在不知不觉间已经完成了任务。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 阅读 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 动力 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Defensive CSS【持续更新】</title>
       <link href="/108/"/>
       <url>/108/</url>
       
-        <content type="html"><![CDATA[<p>当我们开始考虑将防御性CSS作为一种策略时，它将帮助我们揭示隐藏的秘密，让我们设计和构建布局时尽可能少的问题。<br>参考：<a href="https://defensivecss.dev/">https://defensivecss.dev/</a></p>]]></content>
+        <content type="html"><![CDATA[<p>当我们开始考虑将防御性CSS作为一种策略时，它将帮助我们揭示隐藏的秘密，让我们设计和构建布局时尽可能少的问题。<br>参考：<a href="https://defensivecss.dev/">https://defensivecss.dev/</a></p><h1 id="弹性框包装"><a href="#弹性框包装" class="headerlink" title="弹性框包装"></a>弹性框包装</h1><p>CSS flexbox是当今最有用的CSS布局功能之一。添加到包装器中并使子项彼此相邻排序是很诱人的。<code>display: flex</code><br>问题是当没有足够的空间时，默认情况下，这些子项不会换行。我们需要使用 来更改该行为。<code>flex-wrap: wrap</code><br>下面是一个典型的例子。我们有一组选项应该彼此相邻显示。</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.options-list</span> {</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>当空间较少时，将发生水平滚动。这是应该预料之中的，实际上并不是一个“问题”。<br>请注意，这些项目仍然彼此相邻。要解决这个问题，我们需要允许弹性包装。</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.options-list</span> {</span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">flex-wrap</span>: wrap;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><h1 id="图像失真"><a href="#图像失真" class="headerlink" title="图像失真"></a>图像失真</h1><p>当我们无法控制网页上图像的纵横比时，最好提前考虑并在用户上传与纵横比不一致的图像时提供解决方案。<br>在下面的示例中，我们有一个带有照片的卡片组件。它看起来不错。<br>当用户上传不同大小的图像时，它将被拉伸。这不好。看看图像是如何拉伸的！<br>最简单的解决方法是使用 CSS <code>.object-fit</code></p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.card__thumb</span> {</span><br><span class="line">    <span class="attribute">object-fit</span>: cover;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">img</span> {</span><br><span class="line">    <span class="attribute">object-fit</span>: cover;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><h1 id="长内容"><a href="#长内容" class="headerlink" title="长内容"></a>长内容</h1><p>这是一个人名列表，现在看起来很完美。<br>但是，由于这是用户生成的内容，因此我们需要小心如何在时间过长的情况下保护布局。<br>在这样的布局中，一致性很重要。为了实现这一点，我们可以简单地通过使用文本溢出及其好友来截断名称。</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.username</span> {</span><br><span class="line">    <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>在某些情况下，我们可能需要截断对用户不重要或不影响用户体验的文本。在这种情况下，截断文本是个好主意。</p><h1 id="组件间距"><a href="#组件间距" class="headerlink" title="组件间距"></a>组件间距</h1><p>我们开发人员需要考虑不同的内容长度。这意味着，应该将间距添加到组件中，即使它看起来不需要。<br>在此示例中，我们在右侧有一个部分标题和一个操作按钮。目前，它看起来还可以。但是，让我们看看当标题较长时会发生什么。<br>注意到文本离操作按钮太近了吗？您可能正在考虑多行换行，但我将在另一节中讨论。现在，让我们专注于间距。<br>如果标题有间距和文本截断，我们不会看到这样的问题。</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.section__title</span> {</span><br><span class="line">    <span class="attribute">margin-right</span>: <span class="number">1rem</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>这类似于长内容提示，但在这种情况下，我们不想截断文本，因为用户必须阅读所有文本。这里的一件小事是考虑间距，即使我们目前的内容不长。<br>请考虑以下演示。我们有一个简短的标题，一切都像魅力一样。<br>但是，当内容太长时，标题应具有“更多”按钮的边距。提前考虑这一点对于避免文本与按钮发生冲突非常重要。<br>粉红色轮廓表示文本元素。当您单击“切换防御”复选框时，将添加一个间距。</p><h1 id="自动调整与自动填充"><a href="#自动调整与自动填充" class="headerlink" title="自动调整与自动填充"></a>自动调整与自动填充</h1><p>使用 CSS 网格函数时，请务必决定是否使用 or 关键字。如果使用不当，可能会导致意外结果。<code>minmax()</code> <code>auto-fit</code> <code>auto-fill</code><br>使用函数时，关键字将展开网格项以填充可用空间。while 将保留可用空间，而不会更改网格项的宽度。<code>minmax()</code> <code>auto-fit</code> <code>auto-fill</code><br>话虽如此，使用可能会导致网格项太宽，尤其是当它们小于预期时。请考虑以下示例。<code>auto-fit</code></p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrapper</span> {</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(auto-fit, <span class="built_in">minmax</span>(<span class="number">250px</span>, <span class="number">1</span>fr));</span><br><span class="line">    grid-gap: <span class="number">1rem</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>如果只有一个网格项并且正在使用，则该项将展开以填充容器宽度。<code>auto-fit</code><br>大多数时候，不需要这种行为，所以在我看来使用更好。<code>auto-fill</code></p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrapper</span> {</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    grid-template-<span class="attribute">columns</span>: <span class="built_in">repeat</span>(auto-fill, <span class="built_in">minmax</span>(<span class="number">250px</span>, <span class="number">1</span>fr));</span><br><span class="line">    grid-gap: <span class="number">1rem</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p>示例</p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.wrapper</span> {</span><br><span class="line">  --sizing: auto-fit;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  grid-template-<span class="attribute">columns</span>: </span><br><span class="line">  <span class="built_in">repeat</span>(<span class="built_in">var</span>(--sizing), <span class="built_in">minmax</span>(<span class="number">100px</span>, <span class="number">1</span>fr));</span><br><span class="line">  grid-gap: <span class="number">1rem</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><h1 id="背景重复"><a href="#背景重复" class="headerlink" title="背景重复"></a>背景重复</h1><p>通常，当使用大图像作为背景时，我们往往会忘记在大屏幕上查看设计时考虑这种情况。默认情况下，该背景将重复。<br>这在笔记本电脑屏幕上大多不可见，但在较大的屏幕上可以清楚地看到。<br>要提前避免该行为，请确保重置 。<code>background-repeat</code></p><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.hero</span> {</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">'..'</span>);</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>]]></content>
       
       
       <categories>
@@ -255,13 +305,13 @@
       
         <tags>
             
-            <tag> 教程 </tag>
-            
             <tag> you-get </tag>
             
             <tag> 工具 </tag>
             
             <tag> 视频 </tag>
+            
+            <tag> 教程 </tag>
             
         </tags>
       

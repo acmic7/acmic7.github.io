@@ -6,7 +6,7 @@
   <link href="https://acmic.top/atom.xml" rel="self"/>
   
   <link href="https://acmic.top/"/>
-  <updated>2023-02-09T14:58:21.675Z</updated>
+  <updated>2023-02-10T07:18:07.722Z</updated>
   <id>https://acmic.top/</id>
   
   <author>
@@ -17,18 +17,72 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Defensive CSS</title>
+    <title>真实方位是如何暴露的</title>
+    <link href="https://acmic.top/110/"/>
+    <id>https://acmic.top/110/</id>
+    <published>2023-02-03T16:00:00.000Z</published>
+    <updated>2023-02-10T07:18:07.722Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;很多时候，开发者需要知道用户的地理方位。&lt;/p&gt;
+&lt;p&gt;最简单的方法，就是查看用户的 IP 地址，它能够确定地理方位。&lt;/p&gt;
+&lt;p&gt;如果你不想暴露真实方位，需要使用技术手段，伪装自己的 IP</summary>
+        
+      
+    
+    
+    
+    <category term="阅读" scheme="https://acmic.top/categories/%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="IP" scheme="https://acmic.top/tags/IP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2分钟规则</title>
+    <link href="https://acmic.top/109/"/>
+    <id>https://acmic.top/109/</id>
+    <published>2023-02-02T16:00:00.000Z</published>
+    <updated>2023-02-10T06:57:40.578Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;每当你发现很难开始执行某项任务时，可以试试将其缩减成2分钟的版本。&lt;/p&gt;
+&lt;p&gt;看一本书 → 看一页书&lt;br&gt;写一篇文章 → 写一句话&lt;br&gt;跑10公里 → 穿上跑鞋&lt;br&gt;做100次俯卧撑 → 做1次俯卧撑&lt;br&gt;多吃蔬菜水果 → 吃一个水果&lt;br&gt;编写一个程序 →</summary>
+        
+      
+    
+    
+    
+    <category term="阅读" scheme="https://acmic.top/categories/%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="动力" scheme="https://acmic.top/tags/%E5%8A%A8%E5%8A%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Defensive CSS【持续更新】</title>
     <link href="https://acmic.top/108/"/>
     <id>https://acmic.top/108/</id>
-    <published>2023-02-08T16:00:00.000Z</published>
-    <updated>2023-02-09T14:58:21.675Z</updated>
+    <published>2023-02-01T16:00:00.000Z</published>
+    <updated>2023-02-11T15:05:32.768Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;当我们开始考虑将防御性CSS作为一种策略时，它将帮助我们揭示隐藏的秘密，让我们设计和构建布局时尽可能少的问题。&lt;br&gt;参考：&lt;a</summary>
+    <summary type="html">&lt;p&gt;当我们开始考虑将防御性CSS作为一种策略时，它将帮助我们揭示隐藏的秘密，让我们设计和构建布局时尽可能少的问题。&lt;br&gt;参考：&lt;a href=&quot;https://defensivecss.dev/&quot;&gt;https://defensivecss.dev/&lt;/a&gt;&lt;/p&gt;
+&lt;h1</summary>
         
       
     
@@ -45,8 +99,8 @@
     <title>37%法则：寻找-决策过程</title>
     <link href="https://acmic.top/107/"/>
     <id>https://acmic.top/107/</id>
-    <published>2023-02-07T16:00:00.000Z</published>
-    <updated>2023-02-09T14:58:17.334Z</updated>
+    <published>2023-01-31T16:00:00.000Z</published>
+    <updated>2023-02-10T06:57:33.276Z</updated>
     
     
       
@@ -270,13 +324,13 @@
     <category term="教程" scheme="https://acmic.top/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="教程" scheme="https://acmic.top/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="you-get" scheme="https://acmic.top/tags/you-get/"/>
     
     <category term="工具" scheme="https://acmic.top/tags/%E5%B7%A5%E5%85%B7/"/>
     
     <category term="视频" scheme="https://acmic.top/tags/%E8%A7%86%E9%A2%91/"/>
+    
+    <category term="教程" scheme="https://acmic.top/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
