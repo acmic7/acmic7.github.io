@@ -6,7 +6,7 @@
   <link href="https://acmic.top/atom.xml" rel="self"/>
   
   <link href="https://acmic.top/"/>
-  <updated>2023-02-10T07:18:07.722Z</updated>
+  <updated>2023-02-12T04:10:59.010Z</updated>
   <id>https://acmic.top/</id>
   
   <author>
@@ -15,6 +15,112 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>暗物质开发者</title>
+    <link href="https://acmic.top/114/"/>
+    <id>https://acmic.top/114/</id>
+    <published>2023-02-07T16:00:00.000Z</published>
+    <updated>2023-02-12T04:10:59.010Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;天文学中，暗物质是一种未知的物质，据说宇宙的大部分是暗物质。它既不发光也不反射光，因此望远镜不能直接看到。&lt;/p&gt;
+&lt;p&gt;你看不到暗物质，但我们很确定它在那里。我们知道它，但无法看到它。它永远不会露面。&lt;/p&gt;
+&lt;p&gt;有些开发者不是我们经常遇到的那种开发者，就像暗物质一样，</summary>
+        
+      
+    
+    
+    
+    <category term="阅读" scheme="https://acmic.top/categories/%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="开发者" scheme="https://acmic.top/tags/%E5%BC%80%E5%8F%91%E8%80%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Open is smart. Smart is open.</title>
+    <link href="https://acmic.top/113/"/>
+    <id>https://acmic.top/113/</id>
+    <published>2023-02-06T16:00:00.000Z</published>
+    <updated>2023-02-12T04:02:12.562Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;大家有没有感觉，互联网上免费的东西越来越少了。&lt;br&gt;打开很多网站或 App，都要求你付费：听歌要钱，视频要钱，下载要钱，读一篇文章也要钱。这当然无可厚非，但是我总觉得，&lt;code&gt;纯粹的信息收费不是一个好的商业模式，除非有增值服务&lt;/code&gt;。</summary>
+        
+      
+    
+    
+    
+    <category term="阅读" scheme="https://acmic.top/categories/%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="开源" scheme="https://acmic.top/tags/%E5%BC%80%E6%BA%90/"/>
+    
+    <category term="收费" scheme="https://acmic.top/tags/%E6%94%B6%E8%B4%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GPL维权小故事</title>
+    <link href="https://acmic.top/112/"/>
+    <id>https://acmic.top/112/</id>
+    <published>2023-02-05T16:00:00.000Z</published>
+    <updated>2023-02-12T03:54:45.568Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;开源软件通常带有许可证。大家一直很想知道，如果国内用户不遵守许可证，可以去法院告他吗？&lt;/p&gt;
+&lt;p&gt;上周有一条新闻，深圳市中级人民法院一审判决，被告违反了 GPL 许可证，赔偿侵权费50万元。&lt;/p&gt;
+&lt;p&gt;很多程序员很兴奋，认为这代表 GPL</summary>
+        
+      
+    
+    
+    
+    <category term="阅读" scheme="https://acmic.top/categories/%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="GPL" scheme="https://acmic.top/tags/GPL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>建造就是活着</title>
+    <link href="https://acmic.top/111/"/>
+    <id>https://acmic.top/111/</id>
+    <published>2023-02-04T16:00:00.000Z</published>
+    <updated>2023-02-11T16:05:58.020Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;建造就是活着&lt;br&gt;作者：凯文·凯利&lt;br&gt;我是在纽约郊区长大的，城里一年到头都有很多建筑工地，让少年的我非常困扰。&lt;br&gt;每次进城，到处都是封闭的道路，起重机、水泥卡车让交通堵塞，手提钻不停地响，街道被挖开，建筑物在维修或拆除。&lt;br&gt;整个城市给人一种喧嚣、破坏和混乱的感</summary>
+        
+      
+    
+    
+    
+    <category term="阅读" scheme="https://acmic.top/categories/%E9%98%85%E8%AF%BB/"/>
+    
+    
+    <category term="建造" scheme="https://acmic.top/tags/%E5%BB%BA%E9%80%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>真实方位是如何暴露的</title>
