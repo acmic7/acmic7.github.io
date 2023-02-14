@@ -6,7 +6,7 @@
   <link href="https://acmic.top/atom.xml" rel="self"/>
   
   <link href="https://acmic.top/"/>
-  <updated>2023-02-12T06:26:12.604Z</updated>
+  <updated>2023-02-14T07:46:11.228Z</updated>
   <id>https://acmic.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2022年编程语言热度排行榜</title>
+    <link href="https://acmic.top/116/"/>
+    <id>https://acmic.top/116/</id>
+    <published>2023-02-09T16:00:00.000Z</published>
+    <updated>2023-02-14T07:46:11.228Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;前言&lt;br&gt;一直以来，编程语言都是程序员非常关注的话题。&lt;br&gt;年末将至，是否会有程序员发出疑问——“2022 年行业需求最大的编程语言，花落谁家?”&lt;br&gt;从 2021 年 10 月到 2022 年 11 月，DevJobsScanner 分析了超过 1200</summary>
+        
+      
+    
+    
+    
+    <category term="热度排行" scheme="https://acmic.top/categories/%E7%83%AD%E5%BA%A6%E6%8E%92%E8%A1%8C/"/>
+    
+    
+    <category term="编程语言" scheme="https://acmic.top/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
   
   <entry>
     <title>堵住那只猫</title>
